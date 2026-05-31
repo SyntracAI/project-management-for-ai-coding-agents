@@ -85,6 +85,17 @@ The practical split is simple: use GitHub when the repo is the workflow, Linear 
 
 If you want the broader product framing, [Agiflow](https://agiflow.io/?utm_source=github&utm_medium=referral) shows the same model from the home page.
 
+## Ready-to-use PM skills for your agent
+
+Beyond the comparison, this repo ships a few **copy-pasteable project-management skills** you can run with Claude Code, Cursor, Codex, or ChatGPT — see [`/skills`](./skills):
+
+- **[Task breakdown](./skills/task-breakdown.md)** — turn a feature into scoped tasks with acceptance criteria
+- **[Sprint planning](./skills/sprint-planning.md)** — turn a backlog + capacity into a realistic plan
+- **[Backlog grooming](./skills/backlog-grooming.md)** — clarify, split, estimate, and prioritize
+- **[Standup](./skills/standup.md)** — generate a status update from recent commits and tasks
+
+Each is a single Markdown file with a procedure and an output format. With an MCP-connected board, the same skills read and update real tasks.
+
 ## Frequently asked questions
 
 **What is MCP and why does it matter for project management?**
