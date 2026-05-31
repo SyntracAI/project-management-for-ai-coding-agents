@@ -1,6 +1,10 @@
 ---
 name: task-breakdown
 description: Decompose a feature or objective into small, independently shippable tasks, each with explicit acceptance criteria, size, and dependencies. Use at the start of a feature, when a ticket is too big to estimate, or before sprint planning.
+license: MIT
+metadata:
+  author: SyntracAI
+  version: '1.0.0'
 ---
 
 # Task breakdown
@@ -17,7 +21,7 @@ Turn a feature or objective into a set of small, well-scoped tasks an AI coding 
 - Known constraints (deadline, tech, dependencies).
 - Optional: the relevant part of the codebase the agent can read.
 
-## Procedure
+## Steps
 1. **Restate the goal and the definition of done** in one sentence each. If you can't, ask for clarification before continuing.
 2. **Find the vertical slices.** Split by user-visible outcome, not by layer — each slice should be independently testable and, ideally, shippable behind a flag.
 3. **Write each task** with:

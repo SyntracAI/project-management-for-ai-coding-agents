@@ -1,6 +1,10 @@
 ---
 name: standup
 description: Generate a concise daily standup update (Yesterday / Today / Blockers) from recent activity — git commits, merged or open PRs, and task-board changes. Use for an individual or to summarize a whole team's day.
+license: MIT
+metadata:
+  author: SyntracAI
+  version: '1.0.0'
 ---
 
 # Standup
@@ -16,7 +20,7 @@ Produce a tight standup update from what actually happened, instead of trying to
 - The **task board** state if your agent is connected over MCP (in-progress, done, blocked).
 - Anything you remember that isn't in the tools (decisions, conversations).
 
-## Procedure
+## Steps
 1. **Gather** yesterday's done work from commits and PRs, and any tasks moved to Done.
 2. **Yesterday** — list what was completed, as outcomes not activity ("shipped X", not "worked on X").
 3. **Today** — the 1–3 things you'll actually finish, tied to the current goal or sprint.

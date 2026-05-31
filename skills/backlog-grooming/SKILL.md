@@ -1,6 +1,10 @@
 ---
 name: backlog-grooming
 description: Clarify, split, estimate, and prioritize raw backlog items so they are ready to plan. Produces a groomed, ordered backlog with acceptance criteria and a value/effort priority. Use before sprint planning or whenever the backlog gets messy.
+license: MIT
+metadata:
+  author: SyntracAI
+  version: '1.0.0'
 ---
 
 # Backlog grooming
@@ -16,7 +20,7 @@ Take a messy backlog and make it plannable: each item clear, appropriately sized
 - The raw backlog (titles, notes, tickets).
 - Optional: product goals to prioritize against.
 
-## Procedure
+## Steps
 For **each item**:
 1. **Clarify** the value in one sentence: "As <who>, I want <what>, so that <why>." Drop or merge anything with no clear value.
 2. **Split** anything larger than ~1 day or with multiple distinct outcomes (use `task-breakdown`).

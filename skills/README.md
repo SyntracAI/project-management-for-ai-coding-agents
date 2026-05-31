@@ -1,26 +1,39 @@
 # Project management skills for AI coding agents
 
-A small set of copy-pasteable, agent-agnostic project-management skills you can run with Claude Code, Cursor, Codex, ChatGPT, or any MCP-connected assistant. Each skill is a single Markdown file with a clear procedure and an output format — no install required.
+A small set of project-management skills packaged for the open [agent skills ecosystem](https://github.com/vercel-labs/skills). Each skill is a `SKILL.md` you can install into Claude Code, Cursor, Codex, and 50+ other agents — or just read and paste.
+
+## Install
+
+```bash
+# Install all skills (auto-detects the agents you have)
+npx skills add SyntracAI/project-management-for-ai-coding-agents
+
+# List what's available without installing
+npx skills add SyntracAI/project-management-for-ai-coding-agents --list
+
+# Install one skill to a specific agent
+npx skills add SyntracAI/project-management-for-ai-coding-agents --skill task-breakdown -a claude-code
+```
 
 ## The skills
 
 | Skill | Use it to |
 |---|---|
-| [task-breakdown](./task-breakdown.md) | Turn a feature or objective into scoped tasks with acceptance criteria |
-| [sprint-planning](./sprint-planning.md) | Turn a prioritized backlog + capacity into a realistic iteration plan |
-| [backlog-grooming](./backlog-grooming.md) | Clarify, split, estimate, and prioritize backlog items |
-| [standup](./standup.md) | Generate a concise status update from recent commits, PRs, and tasks |
+| [task-breakdown](./task-breakdown/SKILL.md) | Turn a feature or objective into scoped tasks with acceptance criteria |
+| [sprint-planning](./sprint-planning/SKILL.md) | Turn a prioritized backlog + capacity into a realistic iteration plan |
+| [backlog-grooming](./backlog-grooming/SKILL.md) | Clarify, split, estimate, and prioritize backlog items |
+| [standup](./standup/SKILL.md) | Generate a concise status update from recent commits, PRs, and tasks |
 
-## How to use them
+## Use without the CLI
 
-**Any chat agent (ChatGPT, Claude, …)** — paste the body of a skill, then add your inputs (the feature, the backlog, etc.).
+Every skill is a plain `SKILL.md`. You can also:
+- **Paste** a skill's body into any chat agent (ChatGPT, Claude, …) and add your inputs.
+- **Copy** a skill folder into your agent's skills directory manually (e.g. `.claude/skills/`).
 
-**Claude Code** — drop a skill into `.claude/skills/<name>/SKILL.md` (each file already has `name`/`description` frontmatter), then invoke it by name. Or paste the body as a prompt.
+## With an MCP-connected board
 
-**Cursor / Codex** — add the skill body to your rules/instructions file, or paste it inline.
+If your agent is connected to a project-management tool over MCP (see the [comparison guide](../README.md)), these skills read and update real tasks through your MCP tools instead of just printing Markdown.
 
-**With an MCP-connected board** — if your agent is connected to a project-management tool over MCP (see the [comparison guide](../README.md)), these skills read and update real tasks through your MCP tools instead of just printing Markdown.
+## Contributing
 
-## Notes
-
-These are deliberately tool-agnostic — they work with a plain-text backlog, a git history, or a live board. Tweak the output formats to match your team. PRs adding more skills are welcome.
+Skills follow the [vercel-labs/skills](https://github.com/vercel-labs/skills) format: a directory containing a `SKILL.md` with `name` and `description` frontmatter. PRs adding more skills welcome.

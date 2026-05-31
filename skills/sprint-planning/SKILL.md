@@ -1,6 +1,10 @@
 ---
 name: sprint-planning
 description: Turn a prioritized backlog and a known team capacity into a realistic, committed iteration plan with a single goal, a dependency-ordered task list, and a buffer. Use at the start of a sprint or iteration.
+license: MIT
+metadata:
+  author: SyntracAI
+  version: '1.0.0'
 ---
 
 # Sprint planning
@@ -16,7 +20,7 @@ Convert a prioritized backlog plus capacity into an honest iteration commitment 
 - Team **capacity** for the iteration (person-days, or velocity in points).
 - Iteration length and any fixed dates.
 
-## Procedure
+## Steps
 1. **Write one sprint goal** — a single sentence describing the outcome. If you need "and", the sprint is unfocused; pick the most valuable thread.
 2. **Check readiness.** Each candidate item must have clear acceptance criteria and no blocking unknowns. Send unready items back to grooming — do not commit them.
 3. **Fill to ~80% of capacity**, top of the backlog first. Leave a buffer for review, bugs, and interruptions.
